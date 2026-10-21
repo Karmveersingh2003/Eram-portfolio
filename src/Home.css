@@ -468,6 +468,228 @@ em { font-style: italic; }
   50% { transform: translateY(-10px) rotate(5deg); }
 }
 
+
+/* ===== ABOUT: MOBILE RESPONSIVE ONLY ===== */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+  .ep-about {
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ep-about-bg-text {
+    font-size: clamp(4rem, 16vw, 8rem);
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .ep-about-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    width: 90%;
+  }
+
+  .ep-about-left,
+  .ep-about-right {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .ep-about-left {
+    gap: 1.25rem;
+  }
+
+  .ep-stat-row {
+    gap: 0.75rem;
+    padding: 1.25rem 0.75rem;
+    margin-top: 0.25rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .ep-stat {
+    min-width: 0;
+    gap: 0.4rem;
+  }
+
+  .ep-stat-num {
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
+  }
+
+  .ep-stat-label {
+    font-size: clamp(0.58rem, 2.2vw, 0.7rem);
+    letter-spacing: 0.04em;
+    overflow-wrap: anywhere;
+  }
+
+  .ep-stat-divider {
+    height: 40px;
+  }
+
+  .ep-highlights {
+    gap: 0.5rem;
+  }
+
+  .ep-highlight-chip {
+    padding: 0.55rem 0.85rem;
+    font-size: 0.78rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .ep-about-card {
+    padding: clamp(1.25rem, 5vw, 2rem);
+    border-radius: var(--radius);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .ep-about-quote {
+    font-size: clamp(1rem, 3.8vw, 1.2rem);
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    overflow-wrap: anywhere;
+  }
+
+  .ep-about-quote::before {
+    font-size: 2.5rem;
+  }
+
+  .ep-about-card-footer {
+    gap: 0.75rem;
+    min-width: 0;
+  }
+
+  .ep-about-avatar {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  .ep-about-name,
+  .ep-about-role {
+    overflow-wrap: anywhere;
+  }
+
+  .ep-about-deco-grid {
+    right: -10px;
+    bottom: -15px;
+    gap: 6px;
+  }
+
+  .ep-deco-sq--1 {
+    width: 42px;
+    height: 42px;
+  }
+
+  .ep-deco-sq--2 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ep-deco-sq--3 {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Small mobile phones */
+@media (max-width: 480px) {
+  .ep-about-grid {
+    gap: 1.5rem;
+  }
+
+  .ep-stat-row {
+    padding: 1rem 0.5rem;
+    gap: 0.4rem;
+  }
+
+  .ep-stat-num {
+    font-size: clamp(1.35rem, 5.8vw, 1.8rem);
+  }
+
+  .ep-stat-label {
+    font-size: 0.56rem;
+    letter-spacing: 0.02em;
+  }
+
+  .ep-stat-divider {
+    height: 32px;
+  }
+
+  .ep-highlights {
+    gap: 0.45rem;
+  }
+
+  .ep-highlight-chip {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.72rem;
+    gap: 0.4rem;
+  }
+
+  .ep-about-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .ep-about-quote {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .ep-about-quote::before {
+    font-size: 2.1rem;
+  }
+
+  .ep-about-avatar {
+    width: 38px;
+    height: 38px;
+    font-size: 0.9rem;
+  }
+
+  .ep-about-name {
+    font-size: 0.85rem;
+  }
+
+  .ep-about-role {
+    font-size: 0.72rem;
+  }
+
+  .ep-about-bg-text {
+    font-size: clamp(3.5rem, 15vw, 5rem);
+    letter-spacing: -0.05em;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 360px) {
+  .ep-stat-row {
+    padding: 0.85rem 0.35rem;
+    gap: 0.3rem;
+  }
+
+  .ep-stat-num {
+    font-size: 1.25rem;
+  }
+
+  .ep-stat-label {
+    font-size: 0.52rem;
+    letter-spacing: 0;
+  }
+
+  .ep-highlight-chip {
+    padding: 0.45rem 0.6rem;
+    font-size: 0.68rem;
+  }
+
+  .ep-about-card {
+    padding: 1rem 0.85rem;
+  }
+}
+
+
 /* ===== EDUCATION ===== */
 .ep-education {
   background: linear-gradient(160deg, var(--plum-deeper) 0%, var(--plum) 50%, var(--plum-light) 100%);
